@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import logo from "../logo.svg";
 import "../App.css";
-//import Lamp from "./Lamp";
+import Lamp from "./Lamp";
+
+//import Quote from './Quote';
+import Quotes from "./Quotes";
 
 class App extends Component {
   constructor(props) {
@@ -25,10 +28,10 @@ class App extends Component {
           <img src={logo} className={`App-logo ${rotate}`} alt="logo" />
           <button onClick={this.handleClick}>{isWorking}</button>
         </header>
+        <Quotes />
       </div>
     );
   }
 }
 
 export default App;
-
