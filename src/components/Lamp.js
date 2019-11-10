@@ -17,6 +17,7 @@ class Lamp extends Component {
     const light = this.state.on ? "on" : "off";
     return (
       <div className="Lamp">
+    
         <button onClick={this.handleClick} className={light}>
           {light.toUpperCase()}
         </button>
